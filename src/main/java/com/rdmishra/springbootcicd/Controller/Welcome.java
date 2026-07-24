@@ -13,4 +13,9 @@ public class Welcome {
     public ResponseEntity<String> welcome() {
         return ResponseEntity.ok("Welcome to spring boot CI/CD");
     }
+
+    @GetMapping("/v1")
+    public ResponseEntity<String> cicd() {
+        return ResponseEntity.ok("Successfully Achive GOAL");
+    }
 }
